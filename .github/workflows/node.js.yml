@@ -31,6 +31,6 @@ jobs:
     - name: Archive output CSV
       uses: actions/upload-artifact@v4
       with:
-        name: output-csv
+        name: output-csv-${{ github.run_number }}
         path: output.csv
         overwrite: true
