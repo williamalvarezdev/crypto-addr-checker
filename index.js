@@ -1,6 +1,6 @@
 const Blockfrost = require("@blockfrost/blockfrost-js");
 const API = new Blockfrost.BlockFrostAPI({
-  projectId: process.env.PROJECTID, 
+  projectId: "preprodx2V0nPCSUCQRitmZv9fUMCQu3BiVVXBg", 
 });
 const createCsvWriter = require('csv-writer').createObjectCsvWriter;
 
