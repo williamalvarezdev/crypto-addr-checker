@@ -1,0 +1,25 @@
+{
+  "name": "crypto-addr-checker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "run": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/williamalvarezdev/crypto-addr-checker.git"
+  },
+  "author": "William Alvarez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/williamalvarezdev/crypto-addr-checker/issues"
+  },
+  "homepage": "https://github.com/williamalvarezdev/crypto-addr-checker#readme",
+  "dependencies": {
+    "@blockfrost/blockfrost-js": "^6.0.0",
+    "as-hex": "^1.0.1",
+    "csv-writer": "^1.6.0"
+  }
+}
