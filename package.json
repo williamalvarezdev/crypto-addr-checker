@@ -20,6 +20,7 @@
   "dependencies": {
     "@blockfrost/blockfrost-js": "^6.0.0",
     "as-hex": "^1.0.1",
-    "csv-writer": "^1.6.0"
+    "csv-writer": "^1.6.0",
+    "express": "^5.1.0"
   }
 }

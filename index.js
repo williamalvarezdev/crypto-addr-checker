@@ -1,10 +1,10 @@
 const Blockfrost = require("@blockfrost/blockfrost-js");
 const API = new Blockfrost.BlockFrostAPI({
-  projectId: process.env.PROJECTID, 
+  projectId: "preprodx2V0nPCSUCQRitmZv9fUMCQu3BiVVXBg", 
 });
 const createCsvWriter = require('csv-writer').createObjectCsvWriter;
 
-const add = "addr_test1wzs7xqd6y04p6nyeqjzt8gpuktw4x82p4ve9fmg5vut22ksl6el0e"
+// const add = "addr_test1wzs7xqd6y04p6nyeqjzt8gpuktw4x82p4ve9fmg5vut22ksl6el0e"
 
 async function runExample(add) {
 
@@ -54,12 +54,12 @@ async function runExample(add) {
     csvWriter.writeRecords(records)    
         .then(() => {
             console.log('CSV created! Check within this folder, it should be called output.csv');
-        });
-
+        });   
+    return records  
     } catch (err) {
     console.log("error", err);
   }
     }
 
-runExample(add)
+    module.exports = { runExample };
 
