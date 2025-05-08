@@ -3,12 +3,12 @@ const app = express();
 const PORT = 3000;
 const { runExample } = require('./index'); 
 
-app.get('/', async (req, res) => {
-    let add = req.query.add 
-    let output = await runExample(add)
+app.get('/address/:address', async (req, res) => {
+    let address = req.params.address 
+    let output = await runExample(address)
     res.json({
         status: 'success',
-        data: output,  // This is the response from the runExample function
+        data: output,
       });
 });
 
